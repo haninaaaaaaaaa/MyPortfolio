@@ -40,7 +40,7 @@ body{
 }
 
 p{
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 30px;
   font-size: 15px;
   text-align: center;
@@ -117,3 +117,50 @@ body, html {
       #myBtn:hover {
         background-color: #212127; /* Add a dark-grey background on hover */
       }
+
+
+      /*----------- FOR ICON BAR ------------------*/
+    .icon-bar {
+      position: fixed;
+      top: 25%;
+      right: 0%;
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      font-size: 15px;
+    }
+    
+    .icon-bar a:hover {
+      background-color:white;
+      color: #212127;
+    }
+    
+    .facebook {
+      background:transparent;
+      color: white;
+    }
+    
+    .twitter {
+      background: #212127;
+      color:white;
+    }
+    
+    .google {
+      background: #212127;
+      color: white;
+    }
+    
+    .linkedin {
+      background: #212127;
+      color:white;
+    }
+    
+    .youtube {
+      background: #212127;
+      color: white;
+    }
+    
