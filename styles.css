@@ -24,8 +24,9 @@ body, html {
   
   /* Style tab links */
   .tablink {
-    background-color:#bcbcbc;
-    color: black;
+    
+    background-color:#212127;
+    color: #bcbcbc;
     float: left;
     border: none;
     outline: none;
@@ -37,8 +38,7 @@ body, html {
   }
   
   .tablink:hover {
-    background-color: black;
-    color: white
+    background-color: white;
   }
   
   /* Style the tab content (and add height:100% for full page content) */
