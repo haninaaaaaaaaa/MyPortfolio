@@ -100,8 +100,8 @@ body, html {
       #myBtn {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin-right: 0px;
+        margin-bottom: 0px;
         bottom: 0px; /* Place the button at the bottom of the page */
         right: 0px; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
@@ -131,7 +131,7 @@ body, html {
       text-align: center;
       padding: 16px;
       transition: all 0.3s ease;
-      font-size: 15px;
+      font-size: 17px;
     }
     
     .icon-bar a:hover {
@@ -145,22 +145,22 @@ body, html {
     }
     
     .twitter {
-      background: #212127;
+      background:transparent;
       color:white;
     }
     
     .google {
-      background: #212127;
+      background: transparent;
       color: white;
     }
     
     .linkedin {
-      background: #212127;
+      background: transparent;
       color:white;
     }
     
     .youtube {
-      background: #212127;
+      background:transparent;
       color: white;
     }
     
