@@ -3,6 +3,19 @@ body{
     
 }
 
+.column {
+  float: left;
+  width: 40%;
+  padding: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* VIDEO */
 .myVideo{
     width: 100%;
@@ -32,7 +45,7 @@ body{
 .padding {
   font-size-adjust: initial;
   padding-top: 50px;
-  font-size: large;
+  font-size: 15px;
 }
 
 p{
