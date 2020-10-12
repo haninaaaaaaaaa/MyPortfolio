@@ -6,33 +6,34 @@
 </head>
 <body>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><IMG SRC="images-folder/scrollupWHITE.png" style="width: 80px;"></button>
+   
+  <!---------- IMAGE HEADER MUST CHANGE TO SLIDESHOW --------->
+  <img src="images-folder/jjgraphicsheader.jpg" class="responsive-header">
 
-    <img src="images-folder/jjgraphicsheader.jpg" class="responsive-header">
-
+  <!-------------- TABS ------------>
 <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen" >Home</button>
 <button class="tablink" onclick="openPage('About', this, 'black')" >About</button>
 <button class="tablink" onclick="openPage('Works', this, 'black')" >Works</button>
 <button class="tablink" onclick="openPage('Contact', this, 'black')" >Contact</button>
 
+<!-------------- HOME TAB ------------->
 <div id="Home" class="tabcontent">
-    
     <video width="100%" height="auto" autoplay="autoplay" loop="true" muted >
         <source src="JJGRAPHICS-VID.mp4" type="video/mp4">
       </video>
 </div>
 
+<!-------------- ABOUT TAB ------------->
 <div id="About" class="tabcontent">
   <img src="images-folder/mockup 1.jpg" class="center" style="width: 80%;">
-  <p><B>JJ GRAPHICS</B> IS ALL-IN-ONE GRAPHIC SERVICES! We provide branding services, creative campaigns, marketing designs and website assets effectively. 
+  <p><B>JJ GRAPHICS</B> IS ALL-IN-ONE GRAPHIC SERVICES!<br> We provide branding services, creative campaigns, marketing designs and website assets effectively. 
         We also offer engaging and eye-catching designs to help you promote and market your brand.</p>
   <hr class="solid">
   <img src="images-folder/branding.png" class="logocompilation">
-  
 </div>
 
+<!-------------- WORKS TAB ------------->
 <div id="Works" class="tabcontent">
-  
 </div>
 
 <div id="Contact" class="tabcontent">
@@ -40,9 +41,13 @@
   <p>Who we are and what we do.</p>
 </div>
 
-<!-- SCROLL UP BUTTON -->
+<!--------- SCROLL UP BUTTON ---------->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><IMG SRC="images-folder/scrollupWHITE.png" style="width: 60px;"></button>
 
 
+
+
+<!---------- SCRIPT --------------->
 <script>
     function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
