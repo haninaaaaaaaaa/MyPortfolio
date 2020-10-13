@@ -180,46 +180,30 @@ body, html {
       background:transparent;
       color: white;
     }
-    
     .button {
-      padding-top: 70px;
+      font-family: montserrat;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 40%;
-      border-radius: 30px;
-      background-color: white;
+      width: 50%;
+      background-color:white; /* Green */
       border: none;
       color: #212127;
+      padding: 15px 32px;
       text-align: center;
-      font-size: 19px;
-      padding: 15px;
-      transition: all 0.5s;
+      text-decoration: none;
+      font-size: 16px;
       cursor: pointer;
-      font-family: montserrat;
+      border-radius: 30px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
     }
     
-    .button span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
+    .button {
+      transition-duration: 0.4s;
     }
     
-    .button span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-    
-    .button:hover span {
-      padding-right: 25px;
-    }
-    
-    .button:hover span:after {
-      opacity: 1;
-      right: 0;
+    .button:hover {
+      background-color: #212127; /* Green */
+      color: white;
     }
