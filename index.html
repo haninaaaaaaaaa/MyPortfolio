@@ -26,8 +26,8 @@
 <div id="Home" class="tabcontent">
     
       <img src="images-folder/start-tup.png" class="icon">
-    <p style="padding-top: 0px;" style="text-align: justify">Starting up business? Looking for creative ideas? Don't worry! <B>JJ GRAPHICS</B> offers all-in-one graphic services! We provide branding services, creative marketing campaigns and website assets through
-      effective, engaging and eye-catching designs to help you promote and market your brand.</p>
+    <p style="padding-top: 0px;" style="text-align: justify">Starting up business? Looking for creative ideas? Don't worry! <B>JJ GRAPHICS</B> offers all-in-one graphic services! It provides branding services, creative marketing campaigns and website assets through
+      effective, engaging and eye-catching designs to help promote and market brands.</p>
 
       <button class=button "button1"><span>Read More</span></button>
 
@@ -59,9 +59,95 @@
 <!-------------- WORKS TAB ------------->
 <div id="Works" class="tabcontent">
 <img src="images-folder/jjgraphicsheader.jpg" class="responsive-header">
+
+<div id="myBtnContainer" style="padding-top:30px" >
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('brand')"> Brand</button>
+  <button class="btn" onclick="filterSelection('website')"> Website Assets</button>
+  <button class="btn" onclick="filterSelection('stationery')"> Stationery</button>
+  <button class="btn" onclick="filterSelection('socialmedia')"> Social Media Imagery</button>
+  <button class="btn" onclick="filterSelection('clothing')"> Clothing</button>
+  <button class="btn" onclick="filterSelection('packaging')"> Packaging</button>
+  <button class="btn" onclick="filterSelection('others')"> Others</button>
 </div>
 
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column brand">
+    <div class="content">
+      <img src="images-folder/slogan.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
 
+  
+
+
+  <div class="column nature">
+    <div class="content">
+      <img src="images-folder/mockup7 .jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="images-folder/mockup7 .jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+</div>
 <!-------------- CONTACT TAB ----->
 <div id="Contact" class="tabcontent">
 
@@ -128,6 +214,54 @@ document.body.scrollTop = 0; // For Safari
 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//FILTER GALLERY
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
 
 
