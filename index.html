@@ -72,77 +72,29 @@
 </div>
 
 <!-- Portfolio Gallery Grid -->
+
+
+<!----- PICTURE 1 ------->
 <div class="row">
   <div class="column brand">
     <div class="content">
-      <img src="images-folder/slogan.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
+      <!-- Trigger the Modal -->
+<img id="myImg" src="images-folder/jjgraphicslogo.jpg" alt="JJ Graphics' Official Business Logo" style="width:100%">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+      <h4>My Official Business Logo</h4>
     </div>
   </div>
 
   
-
-
-  <div class="column nature">
-    <div class="content">
-      <img src="images-folder/mockup7 .jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column nature">
-    <div class="content">
-      <img src="images-folder/mockup7 .jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
   
 <!-- END GRID -->
 </div>
@@ -262,6 +214,29 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
 </script>
 
 
