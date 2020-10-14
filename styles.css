@@ -277,12 +277,14 @@ body, html {
     
     /* Add a grey background color on mouse-over */
     .btn:hover {
-      background-color: #ddd;
+      transition-duration: 0.4s;
+      background-color: #212127;
+      color: white;
     }
     
     /* Add a dark background color to the active button */
     .btn.active {
-      background-color: #666;
+      background-color:#212127;
        color: white;
     }
 
