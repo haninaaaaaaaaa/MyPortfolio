@@ -74,77 +74,89 @@
 
 <!-- Portfolio Gallery Grid -->
 
+<!-- Header -->
+<div class="header" id="myHeader">
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images-folder/cosmeticssale.jpg" style="width:100%">
+    <img src="images-folder/expressbanner.jpg" style="width:100%">
+    <img src="images-folder/greenperksbrochure.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images-folder/greenperksheader.jpg" style="width:100%">
+    <img src="images-folder/pixionscard.jpg" style="width:100%">
+    <img src="images-folder/expressmockup.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images-folder/pixionbrochure.jpg" style="width:100%">
+    <img src="images-folder/expresshoody.jpg" style="width:100%">
+    <img src="images-folder/greenperkscard.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images-folder/alingethelmockup.jpg" style="width:100%">
+    <img src="images-folder/cosmetic3layaer.jpg" style="width:100%">
+    <img src="images-folder/expresspackaging.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+
+
+
+<hr class="solid">
+
+
 <!----- PICTURE 1 - JJGRAPAHICS MOCK UP------->
 <div class="row">
   <div class="column brand">
     <div class="content">
-<img src="images-folder/mockup7 .jpg" alt="JJ Graphics' Official Business Logo" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+<img src="images-folder/mockup7jjgraphics .jpg" alt="JJ Graphics' Official Business Logo" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
   </div>
   </div>
-
-  <div class="column stationery">
-    <div class="content">
-<img src="images-folder/jjgraphicscard.jpg" alt="JJ Graphics' Business Card" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  </div>
-
-  <div class="column socialmedia">
-    <div class="content">
-<img src="images-folder/slogan.jpg" alt="JJ Graphics' Slogan" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  </div>
-
 </div>
+
 
 
 <!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
+  <!-- Caption text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="images-folder/mockup7 .jpg" style="width:100%">
+      <div class="numbertext">1 / 5</div>
+      <img src="images-folder/mockup7jjgraphics .jpg" style="width:100%">
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="images-folder/jjgraphicscard.jpg" style="width:100%">
-    </div>
+    
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="images-folder/slogan.jpg" style="width:100%">
-    </div>
 
     <!-- Next/previous controls -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+
 
     <!-- Thumbnail image controls -->
-    <div class="column">
+    <div class="column brand">
       <img class="demo" src="images-folder/mockup7 .jpg" onclick="currentSlide(1)" alt="JJ Graphics' Official Business Logo">
     </div>
-
-    <div class="column">
-      <img class="demo" src="images-folder/jjgraphicscard.jpg" onclick="currentSlide(2)" alt="JJ Graphics' Business Card">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images-folder/slogan.jpg" onclick="currentSlide(3)" alt="JJ Graphics Slogan">
-    </div>
-
-  </div>
-
-
-
-
 </div>
+
+
+
+</div> <!--END WORKS TAB-->
 
 
 <!-------------- CONTACT TAB ----->
