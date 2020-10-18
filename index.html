@@ -8,10 +8,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
 
+
+<body>
+  <!--------- SCROLL UP BUTTON ---------->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><IMG SRC="images-folder/scrollupWHITE.png" style="width: 60px;"></button>
    
-  <!---------- IMAGE HEADER MUST CHANGE TO SLIDESHOW --------->
+  
+      <!------ ICON BAR ------>
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+
+
+
+  <!---------- VIDEO HEADER ------------->
   <video width="100%" height="auto" autoplay="autoplay" loop="true" muted>
     <source src="JJGRAPHICS-VID.mp4" type="video/mp4">
   </video>
@@ -39,134 +54,140 @@
 
   <img src="images-folder/slogan.jpg" class="responsive-header">
 
-  <img src="images-folder/branding.png" class="logocompilation">
+  <img src="images-folder/branding.png" class="responsive-SERVICES">
   <hr class="solid">
 
-  <img src="images-folder/websitebanners.png" class="logocompilation">
+  <img src="images-folder/websitebanners.png" class="responsive-SERVICES">
   <hr class="solid">
 
-  <img src="images-folder/stationery.png" class="logocompilation">
+  <img src="images-folder/stationery.png" class="responsive-SERVICES">
   <hr class="solid">
 
-  <img src="images-folder/socmedimagery.png" class="logocompilation">
+  <img src="images-folder/socmedimagery.png" class="responsive-SERVICES">
   <hr class="solid">
 
-  <img src="images-folder/clothing.png" class="logocompilation">
+  <img src="images-folder/clothing.png" class="responsive-SERVICES">
   <hr class="solid">
 
 </div>
+
+
 
 <!-------------- WORKS TAB ------------->
 <div id="Works" class="tabcontent">
 
+  <!---- HEADER gagawing slideshow -->
 <img src="images-folder/jjgraphicsheader.jpg" class="responsive-header">
 
-<div id="myBtnContainer" style="padding-top: 20px">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('brand')"> Brand</button>
-  <button class="btn" onclick="filterSelection('website')"> Website Assets</button>
-  <button class="btn" onclick="filterSelection('stationery')"> Stationery</button>
-  <button class="btn" onclick="filterSelection('socialmedia')"> Social Media Imagery</button>
-  <button class="btn" onclick="filterSelection('clothing')"> Clothing</button>
-  <button class="btn" onclick="filterSelection('packaging')"> Packaging</button>
-  <button class="btn" onclick="filterSelection('others')"> Others</button>
-</div>
 
-<!-- Portfolio Gallery Grid -->
+<!--------- FILTER BUTTON -------->
+<div id="myBtnContainer">
+  <button class="btn2 active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn2" onclick="filterSelection('brand')"> Brand</button>
+  <button class="btn2" onclick="filterSelection('website')"> Website Assets</button>
+  <button class="btn2" onclick="filterSelection('stationery')"> Stationery</button>
+  <button class="btn2" onclick="filterSelection('socialmedia')"> Social Media Imagery</button>
+  <button class="btn2" onclick="filterSelection('clothing')"> Clothing</button>
+  <button class="btn2" onclick="filterSelection('packaging')"> Packaging</button>
+  <button class="btn2" onclick="filterSelection('others')"> Others</button>
+  </div>
 
-<!-- Header -->
+<!-- GRID BUTTON -->
 <div class="header" id="myHeader">
   <p>Click on the buttons to change the grid view.</p>
   <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="two()">2</button>
   <button class="btn" onclick="four()">4</button>
 </div>
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="images-folder/cosmeticssale.jpg" style="width:100%">
-    <img src="images-folder/expressbanner.jpg" style="width:100%">
-    <img src="images-folder/greenperksbrochure.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images-folder/greenperksheader.jpg" style="width:100%">
-    <img src="images-folder/pixionscard.jpg" style="width:100%">
-    <img src="images-folder/expressmockup.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="images-folder/pixionbrochure.jpg" style="width:100%">
-    <img src="images-folder/expresshoody.jpg" style="width:100%">
-    <img src="images-folder/greenperkscard.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images-folder/alingethelmockup.jpg" style="width:100%">
-    <img src="images-folder/cosmetic3layaer.jpg" style="width:100%">
-    <img src="images-folder/expresspackaging.jpg" style="width:100%">
-  </div>
-</div>
 
-
-
-
-
-
-<hr class="solid">
-
-
-<!----- PICTURE 1 - JJGRAPAHICS MOCK UP------->
+<!----- SHOW PORTFOLIO ------->
 <div class="row">
+
+  <!-- FIRST ROW -->
+  <div class="column website, socialmedia">
+    <div class="content">
+      <img src="images-folder/cosmeticssale.jpg" alt="Sample Banner About Cosmetics" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column website, socialmedia">
+    <div class="content">
+      <img src="images-folder/greenperksheader.jpg" alt="Green Perks Sample Header" style="width:100%">
+    </div>
+    </div>
+    
+  <div class="column stationery">
+    <div class="content">
+      <img src="/images-folder/pixionbrochure.jpg" alt="Pixions Sample Pamphlet" style="width:100%">
+    </div>
+  </div>
+
   <div class="column brand">
     <div class="content">
-<img src="images-folder/mockup7jjgraphics .jpg" alt="JJ Graphics' Official Business Logo" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  </div>
-</div>
-
-
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <!-- Caption text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-      <img src="images-folder/mockup7jjgraphics .jpg" style="width:100%">
+      <img src="/images-folder/alingethelmockup.jpg" alt="Aling Ethel's Mock Up Logo" style="width:100%">
     </div>
+  </div>
 
-    
-
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-
-    <!-- Thumbnail image controls -->
-    <div class="column brand">
-      <img class="demo" src="images-folder/mockup7 .jpg" onclick="currentSlide(1)" alt="JJ Graphics' Official Business Logo">
+  <!-- 2ND ROW -->
+  <div class="column socialmedia, column website">
+    <div class="content">
+      <img src="images-folder/expressbanner.jpg" alt="Express Packs Sample Ad Banner" style="width:100%">
     </div>
-</div>
+  </div>
 
+  <div class="column stationery">
+    <div class="content">
+      <img src="images-folder/pixionscard.jpg" alt="Pixions' Business Card 3D Sample" style="width:100%">
+    </div>
+  </div>
 
+  <div class="column clothing">
+    <div class="content">
+      <img src="images-folder/expresshoody.jpg" alt="Express Packs Sample Hoody Design" style="width:100%">
+    </div>
+  </div>
 
-</div> <!--END WORKS TAB-->
+  <div class="column website, socialmedia">
+    <div class="content">
+      <img src="images-folder/cosmetic3layaer.jpg" alt="Sample Banners About Cosmetics" style="width:100%">
+    </div>
+  </div>
 
+ <!-- 3RD ROW -->
 
-<!-------------- CONTACT TAB ----->
+  <div class="column stationery">
+    <div class="content">
+      <img src="images-folder/greenperksbrochure.jpg" alt="Green Perks Pamphlet Sample" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column brand">
+    <div class="content">
+      <img src="images-folder/expressmockup.jpg" alt="Express Packs Mock Up Logo" style="width:100%">
+    </div>
+  </div>
+  
+  <div class="column stationery">
+    <div class="content">
+      <img src="images-folder/greenperkscard.jpg" alt="Green Perks Business Card Mock up" style="width:100%">
+    </div>
+  </div>
+  
+  <div class="column website, socialmedia">
+    <div class="content">
+      <img src="images-folder/expresspackaging.jpg" alt="Sample Banners About Cosmetics" style="width:100%">
+    </div>
+  </div>
+
+</div><!-- END ROW --->
+
+</div> <!---- END WORKS-->
+
+<!---------- CONTACT TAB --------->
 <div id="Contact" class="tabcontent">
 
 </div>
-
-<!--------- SCROLL UP BUTTON ---------->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><IMG SRC="images-folder/scrollupWHITE.png" style="width: 60px;"></button>
-
 
   <!------ ICON BAR ------>
   <div class="icon-bar">
@@ -181,18 +202,6 @@
     <div id="Contact" class="tabcontent">
     </div>
     
-    <!--------- SCROLL UP BUTTON ---------->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><IMG SRC="images-folder/scrollupWHITE.png" style="width: 60px;"></button>
-    
-    
-      <!------ ICON BAR ------>
-      <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-        <a href="#" class="google"><i class="fa fa-google"></i></a> 
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-          </div>
 
 </body>
 <footer><script src="script.js"></script></footer>
