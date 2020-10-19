@@ -92,24 +92,15 @@
   <button class="btn2" onclick="filterSelection('others')"> Others</button>
   </div>
 
-<!-- GRID BUTTON -->
-<div class="header" id="myHeader">
-  <p>Click on the buttons to change the grid view.</p>
-  <button class="btn active" onclick="one()">1</button>
-  <button class="btn" onclick="two()">2</button>
-  <button class="btn" onclick="four()">4</button>
-</div>
-
 
 <!----- SHOW PORTFOLIO ------->
 <div class="row">
 
   <!-- FIRST ROW -->
+
   <div class="column website, socialmedia">
-    <div class="content">
-      <img src="images-folder/cosmeticssale.jpg" alt="Sample Banner About Cosmetics" style="width:100%">
-    </div>
-  </div>
+      <img id="myImg" src="images-folder/cosmeticssale.jpg" alt="Sample Banner About Cosmetics" style="width:100%">
+</div>
 
   <div class="column website, socialmedia">
     <div class="content">
@@ -128,7 +119,11 @@
       <img src="/images-folder/alingethelmockup.jpg" alt="Aling Ethel's Mock Up Logo" style="width:100%">
     </div>
   </div>
+</div>
 
+
+
+<div class="row">
   <!-- 2ND ROW -->
   <div class="column socialmedia, column website">
     <div class="content">
@@ -153,9 +148,9 @@
       <img src="images-folder/cosmetic3layaer.jpg" alt="Sample Banners About Cosmetics" style="width:100%">
     </div>
   </div>
-
+</div>
  <!-- 3RD ROW -->
-
+<div class="row">
   <div class="column stationery">
     <div class="content">
       <img src="images-folder/greenperksbrochure.jpg" alt="Green Perks Pamphlet Sample" style="width:100%">
@@ -179,9 +174,10 @@
       <img src="images-folder/expresspackaging.jpg" alt="Sample Banners About Cosmetics" style="width:100%">
     </div>
   </div>
-
+</div>
 <!-- 4TH ROW -->
 
+<div class="row">
 <div class="column stationery">
   <div class="content">
     <img src="images-folder/digipenmockup.jpg" alt="3D Mockup - DIGIPEN LOGO" style="width:100%">
@@ -205,10 +201,11 @@
     <img src="images-folder/greenperkspamphlet3d.jpg" alt="Sample Banner About Cosmetics" style="width:100%">
   </div>
 </div>
+</div>
 
 <!-- 5TH ROW -->
-
-<div class="column clothing">
+<div class="row">
+<div class="column website">
   <div class="content">
     <img src="images-folder/cosmeticseye.jpg" alt="Sample Banner About Cosmetics" style="width:100%">
   </div>
@@ -237,6 +234,17 @@
 <div id="Contact" class="tabcontent">
 
 </div>
+
+  <!------------ MODAL IAMGES -------->
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
 
   <!------ ICON BAR ------>
   <div class="icon-bar">
