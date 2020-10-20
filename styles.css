@@ -43,6 +43,7 @@ body{
 }
 
 .center1 {
+  margin-top: 50px;
   padding-bottom: 0px;
   padding-top: 20px;
   display: block;
@@ -51,6 +52,8 @@ body{
   width: 80%;
   text-align: center;
 }
+
+
 
 .padding {
   font-size-adjust: initial;
@@ -233,8 +236,6 @@ body, html {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  margin: 4px 0px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -245,8 +246,6 @@ body, html {
 
 /* Create three equal columns that floats next to each other */
 .row {
-  
-  width: 33.33%;
   display: none; /* Hide columns by default */
 }
 
@@ -273,47 +272,49 @@ body, html {
 
 .header {
   text-align: center;
-  padding: 32px;
+  padding: auto;
+  margin-bottom: 20px;
 }
 
 .column {
-	margin: auto;
   display: -ms-flexbox; /* IE 10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
   flex-wrap: wrap;
-  padding: auto;
+  padding: 0  4px;  
 }
 
 /* Create two equal columns that sits next to each other */
 .row {
   -ms-flex: 100%; /* IE 10 */
   flex: 100%;
-}
+}   
 
 .row img {
   margin-top: auto;
-  vertical-align: middle;
-  width: 100%;
+    vertical-align: middle;
 }
 
 /* Style the buttons -- GRID */
 .btn {
   border: none;
   outline: none;
-  padding: 10px 16px;
+  padding: 11px 15px;
   background-color: #f1f1f1;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 12px;
   font-family: montserrat;
+  border-radius: 20px;
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color:#212127;
+  transition-duration: 0.4s;
+  color: white;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color:#212127;
   color: white;
 }
 
@@ -322,19 +323,23 @@ body, html {
 .btn2 {
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 12px 15px;
   background-color: white;
   cursor: pointer;
   font-family: montserrat;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 
 .btn2:hover {
-  background-color: #ddd;
+  background-color:#212127;
+  transition-duration: 0.4s;
+  color: white;
 }
 
 .btn2.active {
-  background-color: #666;
+  background-color: #212127;
   color: white;
 }
 
@@ -398,4 +403,71 @@ body, html {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  font-family: montserrat;
+}
+
+/*************** SLIDESHOW HEADER **************/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: montserrat;
+  margin-top: 30px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
